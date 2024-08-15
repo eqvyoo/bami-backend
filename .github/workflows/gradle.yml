@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
     # 2. Springboot 애플리케이션 빌드
     - name: Setup Gradle
-      uses: gradle/grable-build-action@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+      uses: gradle/gradle-build-action@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
       with:
         arguments: clean bootJar
     # 3. Docker 이미지 빌드
